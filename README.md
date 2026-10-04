@@ -22,6 +22,14 @@ While we put a lot of manual effort into [pyespargos](https://github.com/ESPARGO
 2. Install the matching firmware with the [firmware installer](https://espargos.net/espsdr/app/flash.html).
 3. Open the [viewer](https://espargos.net/espsdr/app/), connect to the board, and select a frequency.
 
+### Run this fork locally and offline
+
+This fork includes local launchers and a Japanese installation guide in
+[install.MD](install.MD). Start `start-windows.bat` on
+Windows or `./start-linux-macos.sh` on macOS/Linux, then open
+`http://localhost:8765/` in a desktop browser with Web Serial support. Do not
+open `index.html` directly with a `file://` URL.
+
 The installer also includes the **ESP32-S31 Ethernet / USB profile for
 [SoapyESPSDR](https://github.com/ESPARGOS/SoapyESPSDR)**. Select that profile to
 stream continuously to desktop SDR applications. It has its own receiver
